@@ -1,0 +1,747 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* ----open-------global----------- */
+li{
+    list-style: none;
+
+}
+a{
+    text-decoration: none
+}
+.btn{
+    border: none;
+    outline: none
+}
+/* ----close-------global----------- */
+
+/* ----open-------font family  ----------- */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@800&display=swap');
+
+@font-face {
+    font-family: Baloo Bhai;
+    src: url(../font/BalooBhai-Regular.ttf);
+    font-weight: bolder;
+}
+
+/* ----Close------- font family ----------- */
+
+
+
+
+
+
+/* ----open-------Main header ----------- */
+.main_header{
+    max-width: 1260px;
+    margin: 0 auto 50px auto;
+    position: relative;
+}
+
+/* ----Close------- Main header----------- */
+/* ----open-------navber ----------- */
+.topnavber{
+    max-width: 1240px;
+    margin: 0 0 0 20px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+/* this is logo */
+.topnavber .nav_brand{
+    position: absolute;
+    left: 20px;
+    top: 0;
+    width: 80px;
+    height: 100px;
+    background-color: #99cccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.topnavber .nav_brand a img{
+    width: 60px;
+    z-index: 100000;
+
+}
+/* this id close logo */
+
+.nav_menu{
+    width: 100%;
+    background-color: #ccffff;
+    height: 40px;
+    overflow: hidden;
+}
+.nav_menu ul{
+    float: right;
+    margin-right: 100px;
+}
+.nav_menu ul li{
+    padding: 10px 20px  10px 20px;
+    margin: 0 20px;
+    display: inline-block;
+    list-style: none;
+    transition: all .3s;
+}
+.nav_menu ul li:hover{
+    background-color: #99cccc;
+}
+
+.nav_menu ul li a{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #336666;
+    transition: all .3s;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: bolder;
+}
+.nav_menu ul li a:hover{
+    color: #666666;
+}
+.open_menu{
+    display: none;
+}
+.close_menu{
+    display: none;
+}
+
+
+@media screen and (max-width:850px) {
+    
+    .open_menu{
+        position: absolute;
+        right: 20px;
+        top: 37px;
+        font-size: 25px;
+        transition: color .2s;
+        color: black;
+        display: block;
+    }
+    .close_menu{
+        top: 0;
+        position: absolute;
+        left: 0;
+        font-size: 25px;
+        color: black;
+        transition: color .2s;
+        display: block;
+    }
+    .close_menu i:hover{
+        color: #666666;
+    }
+    .open_menu i:hover{
+        color: #666666;
+    }
+    #menuMd{
+        z-index: 5;
+        margin: 0;
+        position: absolute;
+        width: 0;
+        background-color: #ccffff;
+        height: 100vh;
+        top: 0;
+        right: 0;
+        padding-top: 100px;
+        overflow: hidden;
+        transition: width .01s;
+
+    }
+    .nav_menu ul li{
+        margin: 0;
+     display: block;
+
+    }
+}
+/* ----Close------- navber----------- */
+
+
+/* --open----------- Main header option -----------open-- */
+.main_header_option{
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    justify-content: space-evenly;
+}
+.left-main_header_option{
+    width: 500px;
+    text-align: center;
+}
+.left-main_header_option img{
+    width: 100%;
+}
+.right-main_header_option{
+    margin-top: 150px;
+    width: 500px;
+    text-align: center;
+    margin-bottom: 50px;
+    z-index: 2;
+
+}
+.right-main_header_option h1{
+    color: #669999;
+    font-family: Baloo Bhai;
+    font-weight: bolder;
+    text-transform: uppercase;
+    font-size: 60px;
+}
+.right-main_header_option p{
+    color: #669999;
+    font-family: 'Baloo Bhai 2', cursive;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+.right-main_header_option button{
+    background-color: #669999;
+    padding: 5px 30px;
+    font-family: Baloo Bhai;
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 3px;
+    border-radius: 5px;
+    transition: all .3s;
+}
+.right-main_header_option button:hover{
+    background-color: transparent;
+    border: 1px solid black;
+    color: black;
+}
+
+/* --close----------- Main header option -----------close-- */
+
+
+/* --open-----------CHOOSE-CLASS-----------open-- */
+.choose-class{
+    max-width: 1260px;
+    position: relative;
+    margin: 0 auto;
+    background-color: #6c9894;
+    padding-bottom: 50px;
+}
+
+
+.c-c-img{
+    width: 20%;
+    position: absolute;
+    right: 0;
+    top: -240px;
+    z-index: 1;
+}
+
+
+
+.text-c-c{
+    text-align: center;
+    padding-top: 100px;
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+}
+.text-c-c h1{ 
+    font-size: 3rem;
+    font-family: Baloo Bhai;
+    color: #fff;
+    
+}
+.text-c-c p{ 
+    font-family: sans-serif;
+    color: #fff;
+    
+}
+
+
+.c-c-class{
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.c-c-class div{
+    text-align: center;
+    margin: 40px 0;
+    width: 250px;
+    z-index: 10;
+}
+
+.c-c-class div h3{
+    color: #fff;
+    font-size: 1.5rem;
+    font-family: Baloo Bhai;
+}
+.c-c-class div p{
+
+    color: #fff;
+    font-size: .8rem;
+}
+.c-c-class div img{
+    width: 100%;
+}
+
+
+
+/* --close-----------CHOOSE-CLASS-----------close-- */
+
+
+
+
+
+/* <!--open-----------OUR STATS-----------open--> */
+
+.our-stats{
+    max-width: 1260px;
+    margin: 0 auto;
+}
+.o-s-text{
+    width: 50%;
+    padding-top: 100px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.o-s-text h1{
+    font-size: 3rem;
+    font-family: Baloo Bhai;
+    color: #6c9894;
+}
+.o-s-text p{
+    font-size: 1rem;
+    font-family: 'Times New Roman', Times, serif;
+    color: #6c9894;
+}
+
+.o-s-class{
+    margin: 50px 0;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.o-s-class div{
+    text-align: center;
+    width: 250px;
+    height: 250px;
+    border: 4px solid #6c9894;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px 0;
+}
+.o-s-class div h3 {
+    font-size: 2rem;
+    font-family: Baloo Bhai;
+    color: #6c9894;
+}
+.o-s-class div p {
+    font-size: 1rem;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #6c9894;
+}
+
+
+/* <!--close-----------OUR STATS-----------close--> */
+
+
+
+
+
+
+
+/* -open-----------BEST-INSTRUCTOR & NEW-EXPERIENCE-------- */
+.BEST-INSTRUCTOR{
+    max-width: 1260px;
+    margin: 0 auto;
+    display: flex;
+    overflow: hidden;
+    flex-wrap: wrap;
+}
+.BEST-INSTRUCTOR div{
+    width: 50%;
+}
+.b-i-text{
+    background-color: #6c9894;
+}
+.b-i-text h2{
+    margin-top: 40%;
+    margin-left: 10%;
+    font-size: 3rem;
+    font-family: Baloo Bhai;
+    color: #fff;
+    margin-bottom: 10px;
+}
+.b-i-text p{
+    margin-left: 10%;
+    font-size: 1rem;
+    font-family: 'Times New Roman', Times, serif;
+    color: #fff;
+    margin-bottom: 60px;
+}
+.b-i-text button{
+    margin-left: 10%;
+    width: 150px;
+    padding: 5px 10px;
+    margin-bottom: 20%;
+    font-family: Baloo Bhai;
+    font-size: 1rem;
+    color: #336666;
+    transition: all .4s;
+    outline: none;
+    border: none;
+}
+.b-i-text button:hover{
+    transform: scale(1.1);
+    background-color: #336666;
+    color: #ffffff;
+}
+.b-i-img img{
+    width: 100%;
+}
+
+
+.NEW-EXPERIENCE{
+    max-width: 1260px;
+    margin: 50px auto;
+    display: flex;
+    overflow: hidden;
+    flex-wrap: wrap;
+}
+.NEW-EXPERIENCE div{
+    width: 50%;
+}
+.n-e-text{
+    background-color: #6c9894;
+}
+.n-e-text h2{
+    margin-top: 40%;
+    margin-left: 10%;
+    font-size: 3rem;
+    font-family: Baloo Bhai;
+    color: #fff;
+    margin-bottom: 10px;
+}
+.n-e-text p{
+    margin-left: 10%;
+    font-size: 1rem;
+    font-family: 'Times New Roman', Times, serif;
+    color: #fff;
+    margin-bottom: 60px;
+}
+.n-e-text button{
+    margin-left: 10%;
+    width: 150px;
+    padding: 5px 10px;
+    margin-bottom: 20%;
+    font-family: Baloo Bhai;
+    font-size: 1rem;
+    color: #336666;
+    transition: all .4s;
+    outline: none;
+    border: none;
+}
+.n-e-text button:hover{
+    transform: scale(1.1);
+    background-color: #336666;
+    color: #ffffff;
+}
+.n-e-img img{
+    width: 100%;
+}
+
+
+
+
+/* -close-----------BEST-INSTRUCTOR & NEW-EXPERIENCE-------- */
+
+
+/* <!--open-----------Pricing-----------open--> */
+
+.Pricing{
+    max-width: 1260px;
+    margin: 0 auto;
+    background-color: #6c9894;
+}
+.Pricing-text{
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+.Pricing-text h1{
+    font-size: 3rem;
+    font-family: Baloo Bhai;
+    color: #fff;
+}
+.Pricing-text p{
+    font-size: 1rem;
+    font-family: 'Times New Roman', Times, serif;
+    color: #fff;
+}
+.Pricing-card{
+    padding-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.Pricing-card div{
+    text-align: center;
+    background-color: #fff;
+    margin: 20px;
+    width: 250px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Pricing-card div h2{
+    font-size: 1.8rem;
+    font-family: Baloo Bhai;
+    color: #6c9894;
+    margin-bottom: 6px;
+}
+.Pricing-card div p{
+    font-size: 1rem;
+    font-family: Baloo Bhai;
+    color: #6c9894;
+    margin-bottom: 6px;
+}
+.Pricing-card div button{
+    font-size: 1rem;
+    font-family: Baloo Bhai;
+    margin-top: 6px;
+    padding: 5px 40px;
+    color: #fff;
+    transition: all .4s;
+    outline: none;
+    border: none;
+    background-color: #336666;
+}
+.Pricing-card div button:hover{
+    transform: scale(1.1);
+    background-color: #fff;
+    color: #336666;
+}
+
+
+
+    /* <!--close-----------Pricing-----------close--> */
+
+
+    /* -- TRAINER DEVANDRA - */
+    .trainer-devandra{
+        max-width: 1260px;
+        margin: 50px auto;
+        text-align: center;
+    }
+    .trainer-devandra img{
+        width: 250px;
+    }
+    .trainer-devandra p{
+        width: 80%;
+        font-size: 1rem;
+        font-family: Baloo Bhai;
+        color: #6c9894;
+        margin-bottom: 6px;
+        margin: auto;
+    }  
+      .trainer-devandra h1{
+        font-size: 2rem;
+        font-family: Baloo Bhai;
+        color: #6c9894;
+        margin-bottom: 6px;
+    }
+
+    /* -- close --TRAINER DEVANDRA - */
+
+
+    /* .-- Subscribe----open -- */
+    .Subscribe{
+        max-width: 1260px;
+        margin: 0 auto;
+        background-color: #6c9894;
+        text-align: center;
+        align-items: center;
+    } 
+    
+    .Subscribe h1{
+        padding-top: 100px;
+        font-size: 3rem;
+        font-family: Baloo Bhai;
+        color: #fff;
+        margin-bottom: 6px;
+    }  
+     .Subscribe p{
+         width: 80%;
+        font-size: 1rem;
+        font-family: cursive;
+        color: #fff;
+        margin: 0 auto;
+    }
+    .Subscribe div {
+        position: relative;
+        width: 80%;
+        margin: 50px auto 0 auto;
+        padding-bottom: 100px;
+    }
+    .Subscribe input {
+        padding: 15px 0 15px 50px;
+        width: 100%;
+        border-radius: 20px;
+        outline: none;
+        font-size: 1rem;
+        color: #6c9894;
+        font-family: Baloo Bhai;
+
+    }
+    .Subscribe button {
+        position: absolute;
+        right: 0;
+        top: 1px;
+        padding: 15px 30px;
+        border-radius: 20px;
+        border: none;
+        font-size: 1rem;
+        color: #6c9894;
+        font-family: Baloo Bhai;
+        outline: none;
+    }
+
+
+
+
+    /* <!-- Subscribe---close --> */
+
+
+
+/* ---footer--------open */
+
+.footer{
+    padding: 100px 0;
+    max-width: 1260px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.footer div{
+    margin: 20px;
+    width: 200px;
+}
+
+.footer div h4{
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+    font-family: Baloo Bhai;
+    color: #6c9894;
+}
+.footer div p{
+    margin-bottom: 10px;
+    font-size: 1rem;
+    font-family: sans-serif;
+    color: #6c9894;
+}
+.footer div a{
+    margin-bottom: 5px;
+    font-size: 1rem;
+    font-family: Baloo Bhai;
+    color: #6c9894;
+    transition: all .4s;
+}
+
+.footer div a:hover{
+    color: #000;
+}
+.footer div a i{
+    font-size: 1.2rem;
+    color: #6c9894; 
+    margin-right: 5px;
+}
+
+.footer div a i:hover{
+    transform: scale(1.2);
+}
+.footer-a{
+    width: 300px !important;
+}
+
+
+/* ----close---footer */
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:600px) {
+    .c-c-img{
+        width: 35%;
+        position: absolute;
+        right: 0;
+        top: -120px;
+        z-index: 1;
+    }
+    .text-c-c{ 
+        width: 90%;
+        
+    }
+    .text-c-c h1{ 
+        font-size: 2rem;
+        
+    }
+    .o-s-text h1{
+        font-size: 2rem;
+    }
+    .o-s-text{
+        width: 90%;
+
+    }
+    .BEST-INSTRUCTOR div{
+        width: 100%;
+    }
+    .NEW-EXPERIENCE div{
+        width: 100%;
+    }
+    .Pricing-text{
+        width: 90%;
+    }
+    .Subscribe p{
+        width: 94%;
+
+   }
+   .Subscribe h1{
+       font-size: 2rem;
+
+}     .Subscribe div {
+    position: relative;
+    width: 96%;
+    margin: 50px auto 0 auto;
+    padding-bottom: 100px;
+}
+
+    
+}
